@@ -2,15 +2,9 @@
 
 The Monty Bytecode Interpreter is a project that implements a simple interpreter for Monty Bytecode files. Monty 0.98 is a scripting language that relies on a unique stack with specific instructions to manipulate it. This interpreter reads Monty Bytecode files, executes the specified instructions, and provides output accordingly.
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [How to Use](#how-to-use)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
+By: Abdullah Mosbah, Elsayed Hassan
 
 This Monty interpreter project includes the following functionalities:
 
