@@ -35,3 +35,14 @@ void add(stack_t **stack, unsigned int *line_number)
 void nop(stack_t **stack __attribute__((unused)))
 {
 }
+
+/**
+ * invalid_opcode - handling invalid opcode
+ * @opcode: the opcode
+ * @line_number: line number
+ */
+void invalid_opcode(char *opcode, unsigned int *line_number)
+{
+	fprintf(stderr, "L%u: unknown instruction: %s\n", *line_number, opcode);
+	exit(EXIT_FAILURE);
+}

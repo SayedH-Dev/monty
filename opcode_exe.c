@@ -37,7 +37,6 @@ void execute(char *opcode, stack_t **stack, unsigned int *line_number)
 	}
 	else
 	{
-		fprintf(stderr, "L%u: unknown instruction: %s\n", *line_number, opcode);
-		exit(EXIT_FAILURE);
+		invalid_opcode(opcode, line_number);
 	}
 }
