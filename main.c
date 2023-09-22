@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 	if (command == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
+		fclose(file);
 		exit(EXIT_FAILURE);
 	}
 	while (fgets(command, 256, file) != NULL)
@@ -44,9 +45,7 @@ int main(int argc, char *argv[])
 		line_number++;
 	}
 	fclose(file);
-	if (command != NULL)
-	{
-		free(command);
-	}
-	return (0);
+	free(command);
+	free_stk(stack);
+	return (EXIT_SUCCESS);
 }
